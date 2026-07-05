@@ -1,0 +1,211 @@
+/* ── Reset & Base ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #222;
+  background-color: #f4f6f8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Header ── */
+header {
+  background-color: #1e3a5f;
+  color: #fff;
+  padding: 0;
+}
+
+#course-title {
+  display: block;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 1rem 1.5rem 0.75rem;
+  color: #e8f0fe;
+}
+
+/* ── Navigation ── */
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #16304f;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+nav a {
+  color: #c8d8f0;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  padding: 0.75rem 1.5rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover {
+  background-color: #0f2440;
+  color: #ffffff;
+}
+
+/* ── Main ── */
+main {
+  max-width: 1000px;
+  width: 90%;
+  margin: 2rem auto;
+  flex: 1;
+}
+
+main h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  text-align: center;
+  color: #1e3a5f;
+  margin-bottom: 1.5rem;
+}
+
+/* ── Cards Grid ── */
+.cards-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.25rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #d0d8e4;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.card-header {
+  background-color: #1e3a5f;
+  color: #fff;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  padding: 0.65rem 1rem;
+}
+
+.card-body {
+  padding: 1.25rem;
+}
+
+/* ── About Me Card ── */
+.about-top {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.about-top p {
+  font-size: 0.88rem;
+  line-height: 1.65;
+  color: #2c5282;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 180px;
+  object-fit: cover;
+  object-position: top;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* ── Location Section ── */
+.location-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: #1e3a5f;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 0.4rem 0;
+  margin: 0.5rem 0 0.85rem;
+  letter-spacing: 0.02em;
+}
+
+.location-content {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.flag-figure {
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.flag-img {
+  width: 110px;
+  height: 70px;
+  object-fit: cover;
+  border: 1px solid #aaa;
+  display: block;
+}
+
+.flag-figure figcaption {
+  font-size: 0.72rem;
+  font-style: italic;
+  color: #555;
+  margin-top: 0.3rem;
+  text-align: center;
+}
+
+.location-text {
+  font-size: 0.85rem;
+  line-height: 1.65;
+  color: #2c5282;
+}
+
+/* ── Resources Card ── */
+.resources-list {
+  list-style: disc;
+  padding-left: 1.2rem;
+}
+
+.resources-list li {
+  margin-bottom: 0.55rem;
+}
+
+.resources-list a {
+  color: #1a56a0;
+  text-decoration: underline;
+  font-size: 0.88rem;
+}
+
+.resources-list a:hover {
+  color: #0d3b78;
+}
+
+/* ── Footer ── */
+footer {
+  background-color: #1e3a5f;
+  color: #c8d8f0;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  font-size: 0.82rem;
+}
+
+footer p {
+  margin: 0.2rem 0;
+}
+
+#lastModified {
+  color: #7eb3ff;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temple Album | WDD 131</title>
+  <meta name="description" content="A responsive photo album showcasing temples, built for WDD 131 Week 02.">
+  <meta name="author" content="Your Name">
+
+  <!-- Google Fonts: Cormorant Garamond (display) + Karla (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Mobile-first CSS, then large-view overrides -->
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <p class="site-name">Temple Album</p>
+    <button id="menu-button" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+    <nav id="primary-nav">
+      <a href="#" title="Home" class="active">Home</a>
+      <a href="#" title="Old Temples">Old</a>
+      <a href="#" title="New Temples">New</a>
+      <a href="#" title="Large View">Large</a>
+      <a href="#" title="Small View">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Temples of the World</h1>
+
+    <figure>
+      <img src="https://picsum.photos/seed/temple1/500/350" alt="Salt Lake Temple" loading="lazy" width="500" height="350">
+      <figcaption>Salt Lake Temple</figcaption>
+    </figure>
+
+    <figure>
+      <img src="https://picsum.photos/seed/temple2/500/350" alt="Idaho Falls Temple" loading="lazy" width="500" height="350">
+      <figcaption>Idaho Falls Temple</figcaption>
+    </figure>
+
+    <figure>
+      <img src="https://picsum.photos/seed/temple3/500/350" alt="Rexburg Idaho Temple" loading="lazy" width="500" height="350">
+      <figcaption>Rexburg Idaho Temple</figcaption>
+    </figure>
+
+    <figure>
+      <img src="https://picsum.photos/seed/temple4/500/350" alt="Payson Utah Temple" loading="lazy" width="500" height="350">
+      <figcaption>Payson Utah Temple</figcaption>
+    </figure>
+
+    <figure>
+      <img src="https://picsum.photos/seed/temple5/500/350" alt="Draper Utah Temple" loading="lazy" width="500" height="350">
+      <figcaption>Draper Utah Temple</figcaption>
+    </figure>
+
+    <figure>
+      <img src="https://picsum.photos/seed/temple6/500/350" alt="Cardston Alberta Temple" loading="lazy" width="500" height="350">
+      <figcaption>Cardston Alberta Temple</figcaption>
+    </figure>
+
+    <figure>
+      <img src="https://picsum.photos/seed/temple7/500/350" alt="Provo City Center Temple" loading="lazy" width="500" height="350">
+      <figcaption>Provo City Center Temple</figcaption>
+    </figure>
+
+    <figure>
+      <img src="https://picsum.photos/seed/temple8/500/350" alt="Mesa Arizona Temple" loading="lazy" width="500" height="350">
+      <figcaption>Mesa Arizona Temple</figcaption>
+    </figure>
+
+    <figure>
+      <img src="https://picsum.photos/seed/temple9/500/350" alt="Washington D.C. Temple" loading="lazy" width="500" height="350">
+      <figcaption>Washington D.C. Temple</figcaption>
+    </figure>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Your Name | WDD 131 Dynamic Web Fundamentals</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+</body>
+</html>
