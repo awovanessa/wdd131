@@ -1,95 +1,89 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WDD 131 | Dynamic Web Fundamentals | Awo Iwinosa Vanessa</title>
-  <meta name="description" content="WDD 131 | Dynamic Web Fundamentals | Awo Iwinosa Vanessa | Web dev, software engineering, computer science.">
+  <title>Temple Album | WDD 131</title>
+  <meta name="description" content="A responsive photo album showcasing temples, built for WDD 131 Week 02.">
   <meta name="author" content="Awo Iwinosa Vanessa">
+
+  <!-- Google Fonts: Cormorant Garamond (display) + Karla (body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/base.css">
-  <script src="scripts/getdates.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Mobile-first CSS, then large-view overrides -->
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+
+  <script src="scripts/temples.js" defer></script>
 </head>
 <body>
 
-  <!-- Header -->
   <header>
-    <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>
-    <nav>
-      <a href="https://www.linkedin.com/in/vanessa-awo" target="_blank">LinkedIn</a>
-      <a href="https://byupw.instructure.com/" target="_blank">I-Learn</a>
-      <a href="https://www.churchofjesuschrist.org/study/scriptures/ot/ps/46?lang=eng&id=p5#p5" target="_blank">Scripture</a>
-      <a href="finalproject/index.html">Final Project</a>
+    <p class="site-name">Temple Album</p>
+    <button id="menu-button" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+    <nav id="primary-nav">
+      <a href="#" title="Home" class="active">Home</a>
+      <a href="#" title="Old Temples">Old</a>
+      <a href="#" title="New Temples">New</a>
+      <a href="#" title="Large View">Large</a>
+      <a href="#" title="Small View">Small</a>
     </nav>
   </header>
 
-  <!-- Main -->
   <main>
-    <h1>Awo Iwinosa Vanessa</h1>
+    <h1>Temples of the World</h1>
 
-    <div class="cards-grid">
+    <figure>
+      <img src="images/salt-lake-temple.jpg" alt="Salt Lake Temple" loading="lazy" width="500" height="350">
+      <figcaption>Salt Lake Temple</figcaption>
+    </figure>
 
-      <section class="card">
-        <div class="card-header">About Me</div>
-        <div class="card-body">
+    <figure>
+      <img src="images/idaho-falls-temple.jpg" alt="Idaho Falls Temple" loading="lazy" width="500" height="350">
+      <figcaption>Idaho Falls Temple</figcaption>
+    </figure>
 
-          <div class="about-top">
-            <p>
-              My name is Awo Iwinosa Vanessa and I go by Vanessa. I was born in Nigeria and I live in Benin City, Edo State. I am currently a student at Brigham Young University, Idaho studying Software Development and also at the University of Benin (UNIBEN) studying Computer Science (100 Level). I am more of an introvert, I spend most of my day indoors working on web development projects, building my portfolio, and learning new skills. Coding is my safe space; I can code all day without even noticing it's night. I also love listening to music, cooking, and watching football.
-            </p>
-            <img
-              src="images/myprofilepic.jpg"
-              alt="Portrait of Awo Iwinosa Vanessa"
-              class="profile-pic"
-            >
-          </div>
+    <figure>
+      <img src="images/rexburg-idaho-temple.jpg" alt="Rexburg Idaho Temple" loading="lazy" width="500" height="350">
+      <figcaption>Rexburg Idaho Temple</figcaption>
+    </figure>
 
-          <p class="location-title">Benin City, Edo State, Nigeria</p>
+    <figure>
+      <img src="images/payson-utah-temple.jpg" alt="Payson Utah Temple" loading="lazy" width="500" height="350">
+      <figcaption>Payson Utah Temple</figcaption>
+    </figure>
 
-          <div class="location-content">
-            <figure class="flag-figure">
-              <img
-                src="images/nigeriaflag.jpg"
-                alt="Official Flag of Nigeria"
-                class="flag-img"
-              >
-              <figcaption>Official Flag of Nigeria</figcaption>
-            </figure>
-            <p class="location-text">
-              Nigeria is the most populous country in Africa, located in West Africa along the Gulf of Guinea. It is home to over 200 million people and more than 250 ethnic groups. Nigeria is known for its rich cultural heritage, vibrant music scene (Afrobeats), and growing tech ecosystem. Benin City, the capital of Edo State, is one of the oldest cities in Nigeria, renowned for the historic Benin Kingdom and its breathtaking bronze artworks. Abuja, Nigeria's capital city, is a peaceful and well-planned city and Vanessa's dream place to reside.
-            </p>
-          </div>
+    <figure>
+      <img src="images/draper-utah-temple.jpg" alt="Draper Utah Temple" loading="lazy" width="500" height="350">
+      <figcaption>Draper Utah Temple</figcaption>
+    </figure>
 
-        </div>
-      </section>
+    <figure>
+      <img src="images/cardston-alberta-temple.jpg" alt="Cardston Alberta Temple" loading="lazy" width="500" height="350">
+      <figcaption>Cardston Alberta Temple</figcaption>
+    </figure>
 
-      <section class="card">
-        <div class="card-header">Web Dev Resources</div>
-        <div class="card-body">
-          <ul class="resources-list">
-            <li><a href="https://dev.to" target="_blank">Dev.to Community</a></li>
-            <li><a href="https://www.smashingmagazine.com" target="_blank">Smashing Magazine</a></li>
-            <li><a href="https://css-tricks.com" target="_blank">CSS Tricks</a></li>
-            <li><a href="https://www.w3schools.com" target="_blank">W3 Schools</a></li>
-            <li><a href="https://www.udemy.com" target="_blank">Udemy</a></li>
-            <li><a href="https://picsum.photos" target="_blank">Lorem Picsum Image Placeholder</a></li>
-          </ul>
-        </div>
-      </section>
+    <figure>
+      <img src="images/provo-city-center-temple.jpg" alt="Provo City Center Temple" loading="lazy" width="500" height="350">
+      <figcaption>Provo City Center Temple</figcaption>
+    </figure>
 
-    </div>
+    <figure>
+      <img src="images/mesa-arizona-temple.jpg" alt="Mesa Arizona Temple" loading="lazy" width="500" height="350">
+      <figcaption>Mesa Arizona Temple</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/washington-dc-temple.jpg" alt="Washington D.C. Temple" loading="lazy" width="500" height="350">
+      <figcaption>Washington D.C. Temple</figcaption>
+    </figure>
   </main>
 
-  <!-- Footer -->
   <footer>
-    <p>
-      &copy;<span id="currentyear"></span> 🌸 Awo Iwinosa Vanessa 🌸 Nigeria
-    </p>
-    <p id="lastModified"></p>
+    <p>&copy; <span id="year"></span> 🌺 Awo Iwinosa Vanessa 🌺 Nigeria</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
   </footer>
 
 </body>
