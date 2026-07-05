@@ -1,12 +1,12 @@
 /* ============================
-   Design tokens
+   Design tokens — burgundy monochrome
    ============================ */
 :root {
-  --color-bg: #EFEDE7;
+  --color-primary: #6E1423;
+  --color-bg: #F5F1EE;
   --color-surface: #FFFFFF;
-  --color-dark: #26323D;
-  --color-accent: #D9A62B;
   --color-text: #2B2620;
+  --color-on-primary: #F5F1EE;
   --font-display: "Cormorant Garamond", serif;
   --font-body: "Karla", sans-serif;
 }
@@ -34,8 +34,8 @@ img {
    Header & Navigation (mobile)
    ============================ */
 header {
-  background-color: var(--color-dark);
-  color: var(--color-bg);
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -53,8 +53,8 @@ header {
 
 #menu-button {
   background: none;
-  border: 2px solid var(--color-accent);
-  color: var(--color-accent);
+  border: 2px solid var(--color-on-primary);
+  color: var(--color-on-primary);
   font-size: 1.5rem;
   line-height: 1;
   padding: 0.35rem 0.6rem;
@@ -63,7 +63,7 @@ header {
 }
 
 #menu-button:focus-visible {
-  outline: 3px solid var(--color-accent);
+  outline: 3px solid var(--color-on-primary);
   outline-offset: 2px;
 }
 
@@ -74,7 +74,7 @@ nav {
   top: 100%;
   left: 0;
   right: 0;
-  background-color: var(--color-dark);
+  background-color: var(--color-primary);
   padding: 0.5rem 0;
   z-index: 10;
 }
@@ -84,12 +84,12 @@ nav.open {
 }
 
 nav a {
-  color: var(--color-bg);
+  color: var(--color-on-primary);
   text-decoration: none;
   padding: 0.85rem 1.25rem;
   font-weight: 500;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  transition: background-color 0.2s ease, color 0.2s ease;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  transition: background-color 0.2s ease;
 }
 
 nav a:first-child {
@@ -98,13 +98,13 @@ nav a:first-child {
 
 nav a:hover,
 nav a:focus-visible {
-  background-color: rgba(168, 130, 60, 0.15);
-  color: var(--color-accent);
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 nav a.active {
-  color: var(--color-accent);
   font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 /* ============================
@@ -124,22 +124,23 @@ main h1 {
   font-family: var(--font-display);
   font-size: 2.25rem;
   text-align: center;
-  color: var(--color-dark);
+  color: var(--color-primary);
   margin: 1.5rem 0;
 }
 
 figure {
   margin: 0;
   background-color: var(--color-surface);
-  border: 1px solid rgba(38, 50, 61, 0.1);
+  border: 1px solid rgba(110, 20, 35, 0.15);
   border-radius: 6px;
   overflow: hidden;
-  box-shadow: 0 2px 6px rgba(38, 50, 61, 0.08);
+  box-shadow: 0 2px 6px rgba(110, 20, 35, 0.1);
 }
 
 figure img {
   width: 100%;
-  height: auto;
+  height: 220px;
+  object-fit: cover;
 }
 
 figcaption {
@@ -148,15 +149,15 @@ figcaption {
   font-weight: 600;
   text-align: center;
   padding: 0.75rem;
-  color: var(--color-dark);
+  color: var(--color-primary);
 }
 
 /* ============================
    Footer
    ============================ */
 footer {
-  background-color: var(--color-dark);
-  color: var(--color-bg);
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
   text-align: center;
   padding: 1.25rem 1rem;
   font-size: 0.9rem;
