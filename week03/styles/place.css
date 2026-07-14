@@ -1,0 +1,90 @@
+:root {
+  --green: #008751;
+  --white: #ffffff;
+  --dark: #1a1a1a;
+  --gray: #f4f4f4;
+  --font-main: system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--font-main);
+  color: var(--dark);
+  background-color: var(--white);
+}
+
+header {
+  background-color: var(--green);
+  color: var(--white);
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+header .tagline {
+  font-style: italic;
+  margin-top: 0.25rem;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+main {
+  padding: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+section {
+  margin: 2rem 0;
+}
+
+section h2 {
+  color: var(--green);
+  border-bottom: 2px solid var(--green);
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.weather {
+  background-color: var(--gray);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.weather-data li {
+  list-style: none;
+  padding: 0.25rem 0;
+}
+
+.weather-icon-mobile {
+  color: var(--green);
+  display: block;
+}
+
+/* Desktop weather emoticon via pseudo-element, mobile SVG hidden on desktop */
+@media (min-width: 550px) {
+  .weather-icon-mobile {
+    display: none;
+  }
+
+  .weather h2::after {
+    content: " \26C5";
+    font-size: 1.5rem;
+  }
+}
+
+.highlights ul {
+  padding-left: 1.25rem;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--dark);
+  color: var(--white);
+  padding: 1rem;
+  margin-top: 2rem;
+}
